@@ -1,0 +1,1768 @@
+/* 
+Theme Name: Kim Long Diệp 
+Author: Thành Danh - Ondigitals
+Template: hello-elementor
+Version: 1.0.0
+*/
+
+/* Add your custom styles here */
+body{
+  color:white;
+}
+.header__icon-list{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap:10px;
+}
+button:hover {
+  background-color:transparent !important;
+}
+button:focus {
+  background-color:transparent !important; 
+}
+a{
+  color:white;
+  font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 20px;
+transition: 0.7s;
+
+}
+a:hover{
+  color:#FFA61A;
+transition: 0.7s;
+
+}
+#menu-main-menu .active a{
+  color:#FFA61A;
+}
+
+#menu-main-menu .active a::after,#menu-main-menu a:hover::after {
+  content: url(/wp-content/uploads/2023/05/menu-hover-effect.png);
+  position: absolute;
+  left: -1px;
+  top: 20px;
+
+}
+/* trang chi tiết sn phẩm */
+.recented-product-detail-card-name {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+   overflow: hidden;
+  margin:0px;
+}
+.title-product-child-detail{
+  margin: 10px 0;
+}
+.recented-product-detail-card .recented-product-detail-card-price {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffbf41;
+  padding-top: 10px;
+}
+.entry-summary .cart {
+  display: flex;
+  margin-top: 20px;
+}
+.entry-summary .quantity {
+  display: none;
+}
+.single_add_to_cart_button {
+  width: 50%;
+  height: 49px;
+  background: linear-gradient(180deg, #ff785b 0%, #d13f00 100%) !important;
+  border-radius: 60px !important;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+}
+.custom-button-cart-tra-gop {
+  width: 50%;
+  height: 49px;
+  border-radius: 60px !important;
+  border: 1px solid rgba(255, 166, 26, 1);
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+  margin-left: 10px;
+}
+.custom-button-cart-tra-gop:hover {
+  background-color: inherit;
+}
+.content_icon_lien_he {
+  display: flex;
+  gap: 30px;
+}
+.next-btn-viewed-products{
+  right:0px
+}
+.content_icon_lien_he_facebook {
+  width: 65px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border:none;
+  border-radius: 50%;
+}
+.content_icon_lien_he_zalo {
+  width: 65px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  background-color: #0A68FE;
+}
+.entry-summary .woocommerce-Price-amount {
+  color: rgba(255, 191, 65, 1);
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+}
+.entry-summary .price {
+  margin: 20px 0px;
+}
+.bang-size-image{
+  width:65%;
+}
+
+@media (min-width: 1200px) {
+  /* nh chnh trang chi tit sản phẩm */
+  .woocommerce-product-gallery__image {
+    height: 500px;
+  }
+}
+
+.woocommerce-tabs-icon-content {
+  width: 23%;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  align-items: center;
+}
+.woocommerce-tabs-icon-content img {
+  width: 35px;
+  height: 35px;
+}
+.woocommerce-tabs-icon-content p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  padding-top: 15px;
+  color: #6b6b6b;
+}
+/* css phn mô tả sn phm trang chi tit sản phm */
+.product-attributes .product-attributes-item {
+  width: 31%;
+}
+@media only screen and (max-width: 1024px) and (min-width: 600px) {
+  .woocommerce-tabs-icon-content {
+    width: 47%;
+  }
+  
+  .bang-size-image{
+ 	 width:100%;
+	}
+  .product-attributes .product-attributes-item {
+    width: 100%;
+  }
+  .woocommerce-tabs .woocommerce-tabs-icon-content:last-child p {
+	padding-top: 19px !important;
+  }
+  .woocommerce-tabs .woocommerce-tabs-icon-content:nth-child(2) p {
+	padding-top: 0;
+  }
+}
+
+/* mobile */
+@media only screen and (max-width: 595px) and (min-width: 280px) {
+  .woocommerce-tabs-icon-content {
+    width: 100%;
+  }
+  .product-attributes .product-attributes-item {
+    width: 100%;
+  }
+  .bang-size-image{
+ 	 width:100%;
+	}
+}
+@media (max-width: 380px) {
+  .entry-summary .cart {
+  flex-wrap: wrap;
+}
+  .single_add_to_cart_button {
+    width: 100% ;
+  }
+  .custom-button-cart-tra-gop {
+    width: 100%;
+    margin: 10px 0 0 0 !important;
+  }
+}
+.recented-product-detail-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.recented-product-detail-card {
+  width: 18.5%;
+  background-color: #020202;
+  padding: 20px 20px 0 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title-product-child-detail {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.entry-summary .product_title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #ffffff;
+}
+.slidermain-viewed-products{
+  gap:22px;
+}
+.card-viewed-products{
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex:0 0 calc(25% - 15.5px)
+}
+.recented-product-detail-card-info{
+  text-align:center;
+  margin-top: 10px;
+}
+@media only screen and (max-width: 1024px) and (min-width: 600px) {
+   .woocommerce-tabs-icon-content .mdi-star-four-points {
+    display: none;
+  }
+  .recented-product-detail-card {
+    width: 31%;
+    flex:unset;
+  }
+  .title-product-child-detail > hr{
+    display: none;
+  }
+  .title-product-child-detail{
+    justify-content: space-between;
+  }
+   .title-product-child-detail  h6{
+    margin: 0 !important;
+  }
+  .bang-size-image{
+	width: 100% !important;
+    height: auto;
+  }
+  .custom-button-cart-tra-gop{
+     margin: 0 0 0 10px !important;
+  }
+}
+/* mobile */
+@media only screen and (max-width: 595px) and (min-width: 280px) {
+   .woocommerce-tabs-icon-content .mdi-star-four-points {
+    display: none;
+  }
+  .recented-product-detail-card {
+    width: 47%;
+    flex:unset;
+  }
+  .title-product-child-detail > hr{
+    display: none;
+  }
+  .title-product-child-detail  h6{
+    margin: 0 !important;
+  }
+  .title-product-child-detail{
+    justify-content: space-between;
+  }
+  .container-icon-lien-he{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5px;
+}
+  .woocommerce-tabs-icon-content p{
+    padding-top: 10px !important;
+  }
+  .bang-size-image{
+	width: 100% !important;
+    height: auto;
+  }
+  .custom-button-cart-tra-gop{
+     margin: 0 0 0 10px;
+  }
+}
+
+.woocommerce-breadcrumb .fa-chevron-right{
+  margin: 0 7px;
+  color: #767676;
+}
+.woocommerce .woocommerce-breadcrumb {
+    color: #FFA61A;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0px;
+}
+.woocommerce .woocommerce-breadcrumb a {
+    color: #767676;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0;
+}
+/* chỉnh đ rộng ca trang chi tit sn phm */
+@media (min-width: 1200px) {
+  .page-header .entry-title,.site-footer .footer-inner,.site-footer:not(.dynamic-footer),.site-header .header-inner,.site-header:not(.dynamic-header),body:not([class*=elementor-page-]) .site-main {
+      max-width:1300px
+  }
+
+  .site-footer.footer-full-width,.site-header.header-full-width {
+      max-width: 100%
+  }
+}
+@media (min-width: 1200px){
+	.woocommerce #content div.product div.summary,.woocommerce div.product div.summary,.woocommerce-page #content div.product div.summary,.woocommerce-page div.product div.summary {
+    float: right;
+    width: 57%;
+    clear: none
+}
+.woocommerce #content div.product div.images,.woocommerce div.product div.images,.woocommerce-page #content div.product div.images,.woocommerce-page div.product div.images {
+    float: left;
+    width: 40%;
+}
+}
+/* chnh đ rộng ca trang chi tit sn phẩm */
+.bang-size-main p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+
+/* trang gi hàng */
+.woocommerce-cart-form__cart-item td {
+  border: none;
+  text-align: center;
+}
+table {
+  border: none;
+}
+.cart-collaterals .shipping-calculator-form .form-row {
+  height: 55px ;
+}
+.cart-collaterals .shipping-calculator-form button{
+  background: linear-gradient(180deg, #ff785b 0%, #d13f00 100%);
+  border-radius: 40px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+.cart-collaterals .shipping-calculator-form button:hover{
+  background: linear-gradient(180deg, #ff785b 0%, #d13f00 100%);
+  border-radius: 40px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+.woocommerce-cart-form .shop_table.shop_table_responsive th {
+  border-top: none;
+  border: none;
+  border-bottom: 1px solid #fdcd81;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+}
+table caption + thead tr:first-child td,
+table caption + thead tr:first-child th,
+table colgroup + thead tr:first-child td,
+table colgroup + thead tr:first-child th,
+table thead:first-child tr:first-child td,
+table thead:first-child tr:first-child th {
+  border-top: none;
+}
+.woocommerce #content table.cart img,
+.woocommerce table.cart img,
+.woocommerce-page #content table.cart img,
+.woocommerce-page table.cart img {
+  height: auto;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+.woocommerce table.shop_table {
+  background-color: black;
+  border-radius: 15px;
+}
+.woocommerce-cart-form {
+  padding: 0 5%;
+  margin-top: 30px;
+}
+.woocommerce-cart-form__cart-item .product-name {
+  display: flex;
+  align-items: center;
+}
+.woocommerce-cart-form__cart-item .product-name a {
+  text-decoration: none;
+}
+.woocommerce-cart-form__cart-item .product-name a:first-child {
+  margin-right: 10px;
+}
+.woocommerce-cart-form__cart-item .product-name img {
+  border-radius:15px;
+}
+.woocommerce .quantity .qty {
+  width: 150px;
+  text-align: center;
+  border: 1px solid #b5b5b5;
+  border-radius: 30px;
+  color: white;
+  background-color: black;
+}
+.woocommerce-cart-form__cart-item a.remove-item {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+  color: #b5b5b5;
+  text-decoration: none;
+  justify-content: center;
+}
+.woocommerce-cart-form .actions button {
+  background: linear-gradient(180deg, #ff785b 0%, #d13f00 100%);
+  border-radius: 40px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  height: 50px;
+}
+.woocommerce-cart-form .actions .coupon button {
+  background: #ffa61a;
+  border-radius: 40px;
+  color: #ffffff;
+  width: 145px;
+  height: 50px;
+}
+.woocommerce-cart-form .actions .coupon #coupon_code {
+  border: 1px solid #b5b5b5;
+  border-radius: 30px;
+  color: white;
+  background-color: black;
+  width: 400px !important;
+  height: 50px;
+  padding: 3px 20px 5px;
+}
+.woocommerce .cart-collaterals .cart_totals,
+.woocommerce-page .cart-collaterals .cart_totals {
+  float: right;
+  width: 56%;
+  padding-right: 5%;
+}
+/* nút tin hnh thanh toán */
+#add_payment_method .wc-proceed-to-checkout a.checkout-button,
+.woocommerce-cart .wc-proceed-to-checkout a.checkout-button,
+.woocommerce-checkout .wc-proceed-to-checkout a.checkout-button {
+  background: linear-gradient(180deg, #ff785b 0%, #d13f00 100%);
+  border-radius: 40px;
+}
+.woocommerce table.shop_table{
+  border: none;
+}
+#add_payment_method .cart-collaterals .cart_totals tr td,#add_payment_method .cart-collaterals .cart_totals tr th,.woocommerce-cart .cart-collaterals .cart_totals tr td,.woocommerce-cart .cart-collaterals .cart_totals tr th,.woocommerce-checkout .cart-collaterals .cart_totals tr td,.woocommerce-checkout .cart-collaterals .cart_totals tr th {
+  border: none
+}
+.cart_totals > h2{
+  display: none
+}
+@media only screen and (max-width: 1024px) and (min-width: 600px) {
+  .woocommerce-cart-form {
+    padding: 0 3%;
+  }
+   .product-name-gio-hang-kld {
+    width: 75%;
+    text-align: start !important;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+  }
+  .woocommerce .cart-collaterals .cart_totals,
+  .woocommerce-page .cart-collaterals .cart_totals {
+    float: unset;
+    width: 100%;
+    padding:0 3%;
+  }
+  .woocommerce-cart-form__cart-item .product-name a:first-child{
+    display: block;
+  }
+}
+/* mobile */
+@media only screen and (max-width: 595px) and (min-width: 280px) {
+  .woocommerce-cart-form {
+    padding: 0;
+  }
+  .woocommerce-page .cart-collaterals .cart_totals {
+    float: unset;
+    width: 100%;
+    padding: 0;
+  }
+  .woocommerce-cart-form__cart-item .product-name a:first-child{
+    display: block;
+  }
+  .woocommerce-cart-form .actions .coupon #coupon_code {
+    width: 48% !important;
+  }
+  .product-name-gio-hang-kld{
+    margin-left: 50%;
+    text-align: start;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    font-size: 15px;
+  }
+}
+/* trang thanh ton */
+.col-1 #order_review {
+  background-color: #111111;
+  padding: 20px;
+  border-radius: 15px;
+}
+.col-1 #order_review th,
+td {
+  border: none;
+}
+.woocommerce table.shop_table td {
+  border: none;
+}
+#order_review .order-total .woocommerce-Price-amount {
+  color: #ffbf41;
+}
+.woocommerce-billing-fields {
+  background-color: #111111;
+  padding: 20px;
+  border-radius: 15px;
+}
+.woocommerce-billing-fields input {
+  border: 1px solid white;
+  border-radius: 40px;
+  background-color: #111111;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #d0d0d0;
+  height: 50px;
+}
+.select2-results__options li {
+  background-color: #111111;
+  color: white;
+}
+.select2-container--default
+  .select2-selection--single
+  .select2-selection__rendered {
+  line-height: 28px;
+  background-color: black;
+  color: #d0d0d0;
+  height: 50px;
+  border-radius: 40px;
+  border: 1px solid white;
+  padding-top: 10px;
+  padding-left: 15px;
+  text-align: start;
+}
+.select2-container--default .select2-selection--single {
+  background-color: #fff;
+  background-color: black;
+}
+.select2-search--dropdown .select2-search__field {
+  background-color: #111111;
+  color: #d0d0d0;
+}
+.woocommerce-billing-fields__field-wrapper p:not(:first-child) {
+  height: 90px;
+}
+.select2-container--default .select2-selection--single {
+  border: none;
+}
+.select2-container--default
+  .select2-selection--single
+  .select2-selection__arrow {
+  top: 10px;
+  right: 10px;
+}
+.contanier-kld-pay {
+  margin: 20px 0;
+  background-color: #111111;
+  padding: 20px;
+  border-radius: 15px;
+}
+.woocommerce-checkout-payment {
+  background-color: #111111 !important;
+}
+.woocommerce #payment #place_order,
+.woocommerce-page #payment #place_order {
+  float: left;
+  background: linear-gradient(180deg, #ff785b 0%, #d13f00 100%);
+  border-radius: 40px;
+  height: 55px;
+  width: 48%;
+  margin-right: 20px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+}
+.button-mua-tra-gop-page-thanh-toan {
+  float: right;
+  border-radius: 40px;
+  height: 55px;
+  width: 48%;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+  border: 1px solid #ffa61a;
+}
+.woocommerce-info {
+  border-top-color: #ffbf41;
+  background-color: #111111;
+  color: #ffffff;
+}
+.woocommerce-info::before {
+  color: #ffbf41;
+}
+#add_payment_method #payment div.payment_box,
+.woocommerce-cart #payment div.payment_box,
+.woocommerce-checkout #payment div.payment_box {
+  border: 1px solid #fdcd81;
+  border-radius: 20px;
+  background-color: #111111;
+  color: white;
+}
+#add_payment_method #payment div.payment_box::before,
+.woocommerce-cart #payment div.payment_box::before,
+.woocommerce-checkout #payment div.payment_box::before {
+  content: "";
+  display: block;
+  border: 1em solid #fdcd81;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  border-top-color: transparent;
+  position: absolute;
+  top: -0.95em;
+  left: 0;
+  margin: -1em 0 0 2em;
+}
+#add_payment_method #payment ul.payment_methods,
+.woocommerce-cart #payment ul.payment_methods,
+.woocommerce-checkout #payment ul.payment_methods {
+  border-bottom: 1px solid #fdcd81;
+}
+/* phn nhp m gim giá trang checkout */
+.checkout_coupon{
+  border: 1px solid #ffbf41 !important;
+  border-radius: 15px !important;
+}
+.checkout_coupon input{
+  border: 1px solid white;
+  border-radius: 40px;
+  background-color: #111111;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #d0d0d0;
+  height: 50px;
+}
+.checkout_coupon button{
+  background: linear-gradient(180deg, #ff785b 0%, #d13f00 100%) !important;
+  border-radius: 40px !important;
+  height: 45px;
+  width: 30%;
+  color: #ffffff !important;
+}
+@media (min-width: 1200px) {
+  .woocommerce .col2-set .col-1,
+  .woocommerce-page .col2-set .col-1 {
+    float: left;
+    width: 38%;
+  }
+
+  .woocommerce .col2-set .col-2,
+  .woocommerce-page .col2-set .col-2 {
+    float: right;
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 1024px) and (min-width: 600px) {
+  .woocommerce .col2-set .col-1,
+  .woocommerce .col2-set .col-2,
+  .woocommerce-page .col2-set .col-1,
+  .woocommerce-page .col2-set .col-2 {
+    float: none;
+    width: 100%;
+  }
+  .woocommerce .col2-set .col-1,
+  .woocommerce .col2-set .col-2,
+  .woocommerce-page .col2-set .col-1,
+  .woocommerce-page .col2-set .col-2 {
+    float: none;
+    width: 100%;
+  }
+  /* chnh kch thc chiu rng ca page */
+  .page-header .entry-title,
+  .site-footer .footer-inner,
+  .site-footer:not(.dynamic-footer),
+  .site-header .header-inner,
+  .site-header:not(.dynamic-header),
+  body:not([class*="elementor-page-"]) .site-main {
+    max-width: 750px;
+  }
+  .woocommerce-billing-fields {
+  margin-top: 15px;
+}
+}
+/* mobile */
+@media only screen and (max-width: 595px) and (min-width: 280px) {
+  .woocommerce form .form-row-first,
+  .woocommerce form .form-row-last,
+  .woocommerce-page form .form-row-first,
+  .woocommerce-page form .form-row-last {
+    width: 100%;
+  }
+  .woocommerce #payment #place_order,
+  .woocommerce-page #payment #place_order,
+  .button-mua-tra-gop-page-thanh-toan {
+    height: 45px;
+    width: 46%;
+    margin-right: 0;
+  }
+}
+/* phần thng bo khi thm sn phm hoc khi xóa sn phm */
+.woocommerce-message{
+  color: #ffffff;
+  background-color: #111111;
+  border-top: 3px solid #ffbf41;
+}
+/* trang chi tit bi vit  */
+.page-content-col-2-new-post {
+  display: flex;
+  height: auto;
+  gap: 20px;
+}
+.page-content-col-2-new-post-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.post-image-page-blog-detail img {
+ 	min-width: 230px;
+    min-height: 160px;
+    max-width: 196px;
+    max-height: 160px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+.post-title-page-blog-detail {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-align: start;
+  margin-bottom: 10px;
+}
+.post-date-page-blog-detail {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #b5b5b5;
+}
+.page-content-col-2-title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.page-content-col-2-title p {
+  width: 50%;
+  display: flex;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #fdcd81;
+  margin: 0;
+}
+.page-content-col-2-title a {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+}
+.page-content-col-1 h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 45px;
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.page-content-col-1 .name-date-post-detail {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffffff;
+  margin-bottom: 40px;
+  display: inline-block;
+}
+.slider-post-detail-main .card-featured img {
+  width: 100%;
+  max-width: 100%;
+  height: 300px;
+}
+
+/* from bình lun */
+.page-content-col-1 #comment {
+  height: 123px;
+  background-color: #111111;
+  border: 1px solid #ffbf41;
+  border-radius: 15px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+}
+#commentform {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#commentform .comment-form-url {
+  display: none;
+}
+#commentform p {
+  width: 100%;
+}
+#commentform .comment-form-email,
+#commentform .comment-form-author {
+  width: 48%;
+}
+#commentform .comment-form-email input,
+#commentform .comment-form-author input {
+  border-radius: 40px;
+  border: 1px solid #ffbf41;
+  background-color: #111111;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+  height: 45px;
+}
+#commentform .comment-form-email label,
+#commentform .comment-form-author label {
+  display: none;
+}
+.comment-form .comment-form-comment label {
+  height: 30px;
+}
+.comment-form .form-submit .submit {
+  width: 197px;
+  height: 55px;
+  background: #ffa61a;
+  border-radius: 40px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+.comment-form .comment-form-cookies-consent label{
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffffff;
+}
+.page-content-col-1 a{
+  color: #fdcd81;
+}
+.page-content-col-1 h2{
+  font-size: 24px;
+}
+.page-content-col-1 h3{
+  font-size: 20px;
+}
+.slider-post-detail-main .card-featured {
+  flex: 0 0 calc(33.333% - 9.8px);
+}
+.slider-post-detail-main .next-btn-featured {
+  right: 0px;
+}
+.title-slider-post-detail {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: 0em;
+  color: #ffffff;
+}
+.page-content-col-2-title-sale p{
+  display: inline;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #fdcd81;
+}
+@media only screen and (max-width: 1024px) and (min-width: 600px) {
+  .page-post-content-col{
+    margin: 1% 3% !important;
+    gap: 60px !important;
+  }
+  .page-content-col {
+    margin: 1% 2% !important;
+  }
+  .page-content-col-1 {
+    width: 60% !important;
+  }
+  .page-content-col-2 {
+    width: 35% !important ;
+  }
+  .page-content-col-2-new-post {
+  	flex-wrap: wrap;
+  }
+  .post-title-page-blog-detail {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+  }
+  .page-content-col-2-title > *{
+    width: 100% !important;
+  }
+  .page-content-col-2-title hr {
+    margin: 8px 0 !important;
+  }
+  .slider-post-detail-main .card-featured {
+    flex: 0 0 calc(50% - 10px);
+  }
+}
+/* mobile */
+@media only screen and (max-width: 595px) and (min-width: 280px) {
+  .page-content-col-2{
+    display: none;
+  }
+  .page-content-col-1{
+    width: 100% !important;
+  }
+  .slider-post-detail-main .card-featured {
+    flex: 0 0 calc(100%);
+  }
+  .slider-post-detail-main .card-featured img {
+    max-width: 100%;
+    height: 350px;
+  }
+}
+/* ng phân cch trang homepage và tile ca các slider  */
+@media (max-width: 900px) {
+  .title-kld-homepage .elementor-container .kld-phan-cach {
+    display: none;
+  }
+  .title-kld-homepage .elementor-container {
+    justify-content: space-between;
+    display: flex;
+  }
+   .title-kld-homepage .elementor-container .kld-link-xem-tat-ca .elementor-widget-wrap {
+    justify-content: end;
+  }
+}
+@media (max-width: 500px) {
+  .title-kld-homepage .elementor-container .kld-text-title-homepage {
+    width: 62%;
+  }
+  .title-kld-homepage .elementor-container .kld-text-title-homepage h2 {
+    font-size: 20px !important;
+  }
+  .title-kld-homepage .elementor-container .kld-link-xem-tat-ca {
+    width: 35%;
+  }
+}
+@media (max-width: 360px) {
+  .title-kld-homepage .elementor-container .kld-text-title-homepage {
+    width: 100% !important;
+  }
+
+  .title-kld-homepage .elementor-container .kld-link-xem-tat-ca {
+    width: 100% !important;
+  }
+  .title-kld-homepage .elementor-container .kld-link-xem-tat-ca .elementor-widget-wrap {
+    justify-content: start;
+  }
+  .kld-list-icon-contract ul > li:first-child {
+    width: 60% !important;
+    margin: auto;
+    margin-bottom: 15px !important;
+  }
+}
+  /* trang lien he */
+.from-lien-he-kld input {
+  background-color: black;
+  border-radius: 15px;
+  height: 47px;
+  border: 1px solid #ffbf41;
+  color: white;
+}
+.from-lien-he-kld textarea {
+  background-color: black;
+  border-radius: 15px;
+  height: 123px;
+  border: 1px solid #ffbf41;
+  color: white;
+}
+.from-lien-he-kld .btn-submit-lien-he {
+  border-radius: 40px;
+  background: var(--d-9-d-9-d-9, #ffa61a);
+  width: 222.281px;
+  height: 55px;
+  color: #fff;
+  font-size: 14px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+}
+.col-from-lien-he .text-from-lien-he {
+  margin: 0;
+}
+.from-lien-he-kld label {
+  width: 100%;
+}
+.list-icon-kld-lien-he i {
+  background: -webkit-linear-gradient(97.62deg, #fdcd81 25%, #ce8108 72.79%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 25px !important;
+  margin-left: 5px;
+}
+.list-icon-kld-lien-he ul li:first-child .elementor-icon-list-text {
+  background: -webkit-linear-gradient(97.62deg, #fdcd81 25%, #ce8108 72.79%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.title-page-lien-he {
+  background: -webkit-linear-gradient(97.62deg, #fdcd81 25%, #ce8108 72.79%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.list-icon-kld-lien-he a {
+  text-decoration: none;
+}
+@media (max-width: 500px) {
+  .col-from-lien-he .elementor-element-populated {
+    padding: 0 !important;
+  }
+  .image-page-lien-he img {
+    height: auto !important;
+  }
+  .list-icon-kld-lien-he li .elementor-icon-list-text {
+    font-size: 16px !important;
+  }
+  .title-page-lien-he h1 {
+    font-size: 24px !important;
+  }
+}
+@media only screen and (max-width: 900px) and (min-width: 600px) {
+  .col-from-lien-he .elementor-element-populated {
+    padding-left: 15px !important;
+  }
+  .col-left-page-lien-he {
+    width: 100% !important;
+  }
+  .col-right-page-lien-he {
+    width: 100% !important;
+  }
+}
+/* trang đang ky dang nhap */
+.tml {
+  padding: 20px;
+  padding-left: 5%;
+  border-radius: 15px;
+  margin: 30px;
+  background-color: #111111;
+  height: auto;
+}
+.tml .tml-label {
+  display: none;
+}
+.tml .tml-field {
+  width: 100%;
+  height: 49px;
+  border-radius: 20px;
+  border: 1px solid #dedede;
+  background-color: #111111;
+  color: #dedede;
+}
+.tml-image-login {
+  width: 430px;
+  height: auto;
+  float: right;
+  border-radius: 15px;
+}
+.tml-image-login img {
+  width: 100%;
+  height: 100%;
+}
+.tml-field-wrap {
+  width: 50%;
+}
+.tml-field-wrap #pass-strength-result {
+  border-radius: 15px;
+}
+.tml-links {
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  height: 130px;
+}
+.tml-lostpassword .tml-links {
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  height: 240px;
+}
+.tml-links li {
+  display: flex;
+  gap: 5px;
+}
+.tml-links li a {
+  color: #ffa61a;
+}
+.tml button {
+  border-radius: 40px;
+  background: var(
+    --d-9-d-9-d-9,
+    linear-gradient(180deg, #ff785b 0%, #d13f00 100%)
+  );
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  width: 250px;
+  height: 52px;
+}
+.tml-register .tml-links {
+  display: none;
+}
+.title-login-register h1 {
+  font-size: 32px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: #ffa61a;
+  margin-top: 20px;
+}
+.tml-lostpassword .tml-login-link {
+  display: none;
+}
+
+.tml-image-login-mobile {
+  display: none;
+}
+@media only screen and (max-width: 1024px) and (min-width: 600px) {
+  .title-login-register h1 {
+    font-size: 29px;
+  }
+  .tml-links {
+    display: block;
+    height: 70px;
+  }
+  .tml-lostpassword .tml-links {
+  height: 70px;
+}
+  .tml-image-login {
+    height: 360px;
+  }
+  .tml-register .indicator-hint {
+    display: none;
+  }
+  .hide-if-no-js {
+    display: none;
+  }
+  .hide-if-no-js.short,
+  .hide-if-no-js.bad,
+  .hide-if-no-js.good,
+  .hide-if-no-js.strong {
+    display: block;
+  }
+  .tml {
+    padding-left: 20px;
+    margin: 10px;
+  }
+  .tml-field-wrap {
+    width: 48%;
+  }
+  .tml-image-login {
+    width: 48%;
+  }
+  .tml-lostpassword .tml-image-login {
+    width: 40%;
+    height: 260px;
+  }
+}
+@media only screen and (max-width: 595px) and (min-width: 280px) {
+  .tml {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+  }
+  .tml-image-login {
+    width: 100%;
+    height: unset;
+    float: unset;
+  }
+  .tml-field-wrap {
+    width: 100%;
+  }
+  .tml-links {
+    display: block;
+    height: 40px;
+  }
+    .tml-lostpassword .tml-links {
+  height: 40px;
+}
+  .tml .tml-button {
+    width: 100%;
+  }
+  .title-login-register h1 {
+    font-size: 24px;
+  }
+  .tml-register .indicator-hint {
+    display: none;
+  }
+  .hide-if-no-js {
+    display: none;
+  }
+  .hide-if-no-js.short,
+  .hide-if-no-js.bad,
+  .hide-if-no-js.good,
+  .hide-if-no-js.strong {
+    display: block;
+  }
+  .tml-lostpassword .tml-image-login {
+    width: 100%;
+    height: auto;
+  }
+  .tml-image-login {
+    display: none;
+  }
+  .tml-image-login-mobile {
+    display: block;
+    order: 4;
+    margin-top: 50px;
+  }
+}
+/* trang ti khon */
+.woocommerce-MyAccount-content a {
+  text-decoration: none;
+  color: #ffa61a;
+}
+.woocommerce-MyAccount-navigation ul {
+  list-style: none;
+  background-color: black;
+  border-radius: 15px;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 15px;
+  padding: 20px;
+}
+.woocommerce-MyAccount-navigation ul li {
+  padding: 5px 0;
+  position: relative;
+}
+.woocommerce-MyAccount-navigation li a {
+  text-decoration: none;
+}
+.woocommerce-MyAccount-navigation
+  ul
+  .woocommerce-MyAccount-navigation-link.is-active
+  a {
+  color: var(--d-9-d-9-d-9, #ffa61a);
+}
+.woocommerce-MyAccount-navigation
+  ul
+  .woocommerce-MyAccount-navigation-link.is-active
+  a::after {
+  content: "";
+  border: 2px solid #ffa61a;
+  position: absolute;
+  height: 100%;
+  right: 10px;
+}
+.woocommerce-MyAccount-content {
+  background-color: black;
+  padding: 20px;
+  border-radius: 15px;
+}
+.woocommerce-MyAccount-content input {
+  border-radius: 20px;
+  height: 45px;
+  background-color: black;
+  color: white;
+}
+.woocommerce-MyAccount-content button {
+  margin-top: 15px !important;
+  height: 55px;
+  border-radius: 40px !important;
+  background: linear-gradient(180deg, #ff785b 0%, #d13f00 100%) !important;
+  color: #fff !important;
+  width: 200px;
+}
+.woocommerce-MyAccount-content .order-again .button {
+  height: 50px;
+  border-radius: 40px ;
+  background: linear-gradient(180deg, #ff785b 0%, #d13f00 100%);
+  color: #fff ;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.woocommerce-MyAccount-content fieldset {
+  border: 1px solid #ffa61a;
+}
+.woocommerce-MyAccount-content .title-page-tai-khoan,
+.woocommerce-MyAccount-content h2,
+.woocommerce-MyAccount-content h3 {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  background: -webkit-linear-gradient(97.62deg, #fdcd81 25%, #ce8108 72.79%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ffa61a;
+}
+
+.woocommerce-MyAccount-content .woocommerce-orders-table th {
+  border: none;
+}
+.woocommerce-MyAccount-content .u-columns .u-column1 {
+  display: none;
+}
+.woocommerce-MyAccount-content .u-columns .u-column2 {
+  width: 100%;
+}
+.woocommerce-MyAccount-content .u-columns .u-column2 a {
+  color: #ffa61a;
+  text-decoration: none;
+  margin-top: 20px;
+}
+.woocommerce-address-fields .select2-container .select2-selection--single {
+  box-sizing: border-box;
+  cursor: pointer;
+  display: block;
+  height: unset;
+  margin: 0 0 -4px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.woocommerce-MyAccount-content .required {
+  color: #ffa61a !important;
+}
+.woocommerce-MyAccount-content mark {
+  background-color: #ffa61a;
+}
+.woocommerce-MyAccount-content .woocommerce-password-strength {
+  border-radius: 15px;
+  margin-top: 10px;
+}
+.woocommerce-MyAccount-content .woocommerce-orders-table__cell-order-actions a {
+  background: linear-gradient(180deg, #ff785b 0%, #d13f00 100%);
+  color: white;
+  border-radius: 15px;
+  width: 100%;
+  text-align: center;
+}
+.woocommerce-MyAccount-content td {
+  border: 1px solid hsla(0, 0%, 50.2%, 0.5019607843) !important;
+}
+.woocommerce-MyAccount-content td a{
+  color: unset;
+}
+.woocommerce-MyAccount-content th {
+  border: 1px solid hsla(0, 0%, 50.2%, 0.5019607843) !important;
+}
+@media (min-width: 1200px) {
+  .woocommerce-account .woocommerce-MyAccount-navigation {
+    float: left;
+    width: 23%;
+  }
+  .woocommerce-account .woocommerce-MyAccount-content {
+    float: right;
+    width: 74%;
+  }
+}
+/* css trang liên h thng báo khi gi from */
+.wpcf7-response-output {
+	border-radius: 15px;
+	margin: 0;
+}
+.wpcf7-not-valid-tip {
+	padding-top: 5px;
+}
+/* page sản phẩm */
+.category-page-sanpham .category-item {
+  background-color: black;
+  border-radius: 15px;
+  padding: 5px;
+}
+.category-page-sanpham .product-category-widget .category-item span {
+  background: -webkit-linear-gradient(97.62deg, #fdcd81 25%, #ce8108 72.79%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.category-page-sanpham .product-category-widget .category-item img {
+   border: none;
+}
+.title-page-sanpham {
+  background: -webkit-linear-gradient(97.62deg, #fdcd81 25%, #ce8108 72.79%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media (min-width: 1100px) {
+  .category-page-sanpham .product-category-widget .category-item {
+    width: calc(16.16% - 10px);
+  }
+}
+@media only screen and (max-width: 480px) and (min-width: 200px) {
+  .category-page-sanpham .product-category-widget .category-item {
+    width: calc(50% - 10px);
+  }
+}
+/* trang danh mc bi viết */
+#title-category-posts {
+  background: -webkit-linear-gradient(97.62deg, #fdcd81 25%, #ce8108 72.79%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+.page-content-col-1 .page-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.page-content-col-1 .page-content .post {
+  width: 32%;
+}
+.post-image-page-category-posts {
+  height: 250px;
+  width: 100%;
+}
+.post-image-page-category-posts img {
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+}
+.page-content-col-1 .post .post-excerpt {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  margin: 0;
+}
+.page-content-col-1 .entry-title {
+  margin: 0;
+}
+.page-content-col-1 .entry-title a {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 21px;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.page-content-col-2-title .text-mix-and-match {
+  background: -webkit-linear-gradient(97.62deg, #fdcd81 25%, #ce8108 72.79%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.page-content-col-1 .post {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5px;
+}
+/* phân trang danh mc bài viết */
+.pagination-page-category-post .pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+.pagination-page-category-post .pagination .page-numbers {
+  color: #b5b5b5;
+  font-family: SVN-Helvetica Now;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.pagination-page-category-post .pagination .page-numbers.current {
+  background-color: #111111;
+  color: #fff;
+}
+.pagination-page-category-post .pagination .next,
+.pagination-page-category-post .pagination .prev {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #b5b5b5;
+  color: #b5b5b5;
+}
+.page--post-content-col {
+	display: flex;
+    margin: 1% 0;
+    gap: 80px;
+    text-align: start;
+}
+.intro-desc {
+	text-align: justify
+}
+@media (max-width: 1000px) {
+  .page-content-col-1 .page-content .post {
+    width: 100%;
+  }
+  #title-category-posts {
+    font-size: 26px;
+  }
+}
+@media (max-width: 500px) {
+  #title-category-posts {
+    font-size: 25px;
+  }
+}
+@media (max-width: 330px) {
+  #title-category-posts {
+    font-size: 17px;
+    margin-bottom: 10px;
+  }
+}
+/* chỉnh ảnh chính của mặt dây chuyn trang chi tit sn phẩm */
+@media (min-width: 1100px) {
+  .single-product.mat-day-chuyen
+    .woocommerce-product-gallery__wrapper
+    .woocommerce-product-gallery__image
+    a
+    .wp-post-image.not-transparent {
+    transform: translateY(-30%);
+  }
+}
+.single-product .product_title::first-letter {
+    text-transform: uppercase; 
+}
+.live-wrapper {
+	padding: 12px
+}
+.live-wrapper button {
+    top: 12px !important;
+    right: 12px !important;
+}
+.slider-container .elementor-image-carousel-wrapper {
+	border-radius: 15px;
+}
+.html-wrapper {
+	position: absolute;
+    bottom: 0;
+}
+.icon-lien-he-text{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+/* 29/09/23 */
+.category-post-wrapper {
+	margin-top: 20px;
+    padding: 10px;
+    background-color: #000000;
+    border-radius: 15px
+}
+
+.category-post-content {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.category-post-content.hidden {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+    overflow: hidden;
+}
+
+.category-post-content__expanse {
+	width: 100%;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.category-post-content__expanse button {
+    min-width: 150px;
+}
+
+.category-post-content__expanse.hidden button i {
+	transform: rotate(180deg);
+}
+
+.category-post-content__expanse button i {
+	transform: rotate(0);
+}
+ 
+.category-post-wrapper h2,
+.category-post-wrapper h3,
+.category-post-wrapper h4,
+.category-post-wrapper h5,
+.category-post-wrapper h6 {
+	color: #FDCD81;
+}
+
+.category-post-wrapper h2 {
+	font-size: 24px;
+}
+
+.category-post-wrapper h3 {
+	font-size: 20px;
+}
+
+.category-post-wrapper h4 {
+	font-size: 16px;
+}
+
+.category-post-wrapper h5 {
+	font-size: 16px;
+}
+/* hiển thị thuộc tính kim cương thien nhien trang homepage */
+.list-attributes-product {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 5px 0;
+  color:white;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+}
+.list-attributes-product li {
+  padding: 0 7px;
+}
+.list-attributes-product li:not(:last-child) {
+  border-right: 1px solid #fff;
+}
